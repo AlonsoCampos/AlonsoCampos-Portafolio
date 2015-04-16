@@ -1,0 +1,467 @@
+@import "fonts.styl"
+blanco = #fff
+azul_link = #00C3FF
+azul_fondo =#1257AD
+azul =#1EB3D9
+anaranjado =#DD8568
+negro =rgba(0, 0, 0, .1)
+
+
+#info-twitter
+	background azul
+	text-align center
+	position relative
+	height: 400px
+	figure
+		position relative
+		background: transparent
+		margin 0
+		top -15%
+		img
+			margin: 0
+	h4
+		margin: 0
+	div
+		top -2.5em
+		position relative
+		display block
+		margin: 0
+		overflow: hidden
+		a
+			display block			
+		
+body
+	background negro
+	color #fff
+	
+#portafolio
+	height: 400px
+	background #333
+	text-align center
+	position relative
+	h2
+		margin: 0
+		padding 0.5em 0
+		position relative
+		z-index 2
+	h4
+		padding 0.5em 0
+		margin: 0
+		position relative
+		z-index 2
+	.fondo
+		width: 100%
+		height: 300px
+		margin: 0
+		position absolute
+		top 0
+		img 
+			display block
+			height 400px
+			width: 100%
+	#proyectos
+		height 300px
+		position relative
+		z-index 2
+		a 
+			text-decoration none
+			color blanco
+		h3
+			position absolute
+			top 50%
+			display block
+			width: 100%
+			margin: 0
+			z-index 0
+			&:hover
+				color blanco
+			span
+				font-size 1.4em
+				display block
+				margin: 1em 0
+				a 
+					text-decoration none
+					display block
+					font-size 1em
+		#proyecto-item
+			background azul_fondo
+			margin: 1em
+			position relative
+			display inline-block
+			vertical-align top
+			z-index 1
+			&:hover
+				border 3px solid blanco
+				transition: all 1s ease-in-out;
+				transform: scale(1.1) translateX(2px) translateY(5px);
+			#proyecto-img
+				position relative
+				z-index 1
+				height 250px
+				width: 250px
+				margin: 0
+				&:hover
+					opacity 0
+				img 
+					height 250px
+					width 250px
+.resaltado
+	font-weight bold
+	color azul
+
+#header
+	background: blanco
+	color black
+	height: 50px
+	text-align: center
+	position: fixed
+	top: 0
+	left: 0
+	width 100%
+	z-index: 3
+	#nav
+		width: 100%
+		#nav-ul
+			margin: 0
+			.ul-a
+				display inline-block
+				margin: 1em
+				a
+					text-shadow: 1px 3px 2px #EEE
+					color: #333
+					padding: 0.8em
+					text-decoration: none
+
+#acerca-de
+	background: negro
+	text-align center
+	position relative
+	width: 100%
+	top: 0
+	text-align center
+	color blanco
+	height 600px
+	.avatar-info
+		height 550px
+		background rgba(0, 0, 0, .75)
+		position absolute
+		top:  50px	
+		text-align center
+				
+		.avatar
+			padding 2em 0 0 0
+			margin: 0
+			height: 200px
+			width: 100%
+			img, figcaption
+				display inline-block
+				vertical-align: top
+			img
+				height: 200px
+				width: 200px
+				margin: 2em 2.5em
+				border-radius: 50%
+			figcaption 
+				width: 40%
+				h1
+					color blanco
+					text-shadow 2px 1px 3px azul
+					margin: 2em 0
+					font-size: 2em
+		
+		h2
+			font-size: 3em
+			margin: 0
+			span
+				font-style: italic
+		p
+			color blanco
+			text-align left
+			text-shadow 2px 1px 3px black
+			margin: 1em 6em 0 6em
+	.fondo
+		margin: 0
+		width: 100%
+		img
+			height: 600px
+			width: 100%
+			
+#avatar
+	background: azul
+	position relative
+	width 100%
+	figure
+		width: 100%
+		height: 325px
+		margin: 0px;
+		position: relative;
+		bottom: 0px;
+		img
+			position absolute
+			top -35%
+			margin 0
+		figcaption
+			text-shadow 1px 1px 1px blanco
+			color blanco
+			text-align center
+			margin 0px
+			position absolute
+			width 50%
+			font-size 2em
+			right 5%
+			top 25%
+			span
+				font-weight bold
+				font-style italic
+				color black
+
+#habilidades
+	position relative
+	text-align center
+	background: negro
+	height: 400px
+	.fondo
+		background: #333
+		position absolute
+		top 0
+		margin: 0
+		width: 100%
+		img
+			opacity 0.5
+			height: 400px
+			width: 100%
+	.habilidades-titulo
+		position relative
+		text-shadow 2px 2px 1px negro
+		font-size 2em
+		color blanco
+		margin: 0
+		padding: 1em 0 1em 0
+		text-align center
+	#habilidad
+		position relative
+		margin: 0 1em 1em 0
+		background: negro
+		border-radius 50%
+		vertical-align: top
+		height: 150px
+		width: 150px
+		color white
+		display inline-block
+		border: 2px solid blanco
+		&:hover
+			transition: all 1s ease-in-out;
+			border 5px solid azul
+			box-shadow: 1px 1px 2px blanco
+		#habilidad-info
+			text-shadow 1px 2px 1px black
+			color white
+			font-size: 1.5em
+			margin: 1.4em 0
+			text-align center
+	#info
+		position relative
+		text-align center
+		width: 100%
+		text-shadow 1px 1px 1px black
+		height 100px
+		article
+			display inline-block
+			margin: 0 3em
+			&:hover
+				transform: scale(1.1) rotate(1deg) translateX(10px) translateY(10px);
+				transition: all 2s ease-in-out;
+				//text-shadow 1px 1px 2px rgba(255, 255, 255, .5)
+				color azul
+			h3
+				margin: 0
+				font-size 2.5em
+				color #FFF
+			h5
+				font-style italic
+				margin: 0
+				color #FFF	
+				
+#contactanos
+	background #222
+	h2
+		font-size 2em
+		color blanco
+		text-align center
+		margin: 0
+	h3
+		color blanco
+		text-align center		
+	#contactanos-form
+		display block
+		.contact_form
+			display block
+		.contact_form h2 {
+		    background: none repeat scroll 0 0 #F3F3F3;
+		    border-radius: 5px;
+		    color: #5CD053;
+		    display: block;
+		    font-size: 20px;
+		    padding: 5px;
+		    text-shadow: 1px 1px 1px #CCCCCC;
+		    width: 433px;
+		}
+
+		/*--- estilos para los ul y li del formulario ---*/
+		.contact_form ul {
+		    width:100%;
+		    list-style-type:none;
+			margin:0px;
+			padding:0px;
+		}
+		.contact_form li{
+			padding:12px; 
+			//border-bottom:1px solid #eee;
+			position:relative;
+		} 
+		.contact_form label {
+		    color: #555555;
+		    display: inline-block;
+		    float: left;
+		    font-size: 13px;
+		    font-weight: bold;
+		    margin-top: 3px;
+		    padding: 3px;
+		    width: 90px;
+		    color:blanco;
+		}
+		.contact_form input {
+			height:30px; 
+			width:80%; 
+			padding:5px 8px;
+		}
+		.contact_form textarea {
+			padding:8px; 
+			width:80%;
+		}
+		.contact_form button {
+			margin-left:90px;
+		}
+
+		/*----- estilos visuales de los elementos --------*/
+
+		.contact_form input, .contact_form textarea { 
+			border:1px solid #aaa;
+			box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+			border-radius:2px;
+			color: #888;
+			font-size: 12px;
+			padding-right:30px;
+			transition: padding .25s;
+		}
+		.contact_form input:focus, .contact_form textarea:focus {
+			background: #fff; 
+			border:1px solid #555; 
+			box-shadow: 0 0 3px #aaa; 
+			padding-right:80px;
+		}
+
+		/* === Estilos de Validacion === */	
+
+		.contact_form input:required:valid, .contact_form textarea:required:valid {
+			box-shadow: 0 0 5px #5cd053;
+			border-color: #28921f;
+		}
+		.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+			box-shadow: 0 0 5px #d45252;
+			border-color: #b03535
+		}
+
+		/* === Estilos del boton de Envio === */
+		button.submit {
+		   padding: 9px 17px;
+		   font-family: Helvetica, Arial, sans-serif;
+		   font-weight: bold;
+		   line-height: 1;
+		   color: #222;
+		   border: none;
+		   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+		   background-color: #fff;
+		   border: 1px solid #FFF;
+		   border-radius: 10px;
+		   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+		}
+		button.submit:hover {
+			cursor: pointer;
+			background azul 
+			color: #fff;
+			transition: all 1s ease-out;
+		}
+		button.submit:active {
+			border: 1px solid #222;
+			box-shadow: 0 0 10px 5px #FFF inset; 
+		}
+		
+	#sociales
+		position relative
+		text-align center
+		background: negro
+		height: 250px
+		width: 100%
+		h3
+			position relative
+			text-shadow 2px 2px 1px negro
+			font-size 2em
+			color azul
+			margin: 0
+			padding: 1em 0 1em 0
+			text-align center
+			z-index 2
+			color azul
+		#imagen-url
+			position absolute
+			top 0
+			background #333
+			opacity 1
+			margin: 0
+			width 100%
+			img 
+				opacity 0.3
+				height: 250px
+				display block
+				width: 100%
+		#social
+			width 100%
+			bottom 0
+			display block
+			position absolute
+			z-index 2
+			a
+				font-size 1.4em
+				margin: 1em 0.4em
+				text-decoration none
+				color #fff
+				display inline-block
+				&:hover
+					transform: scale(1.1) rotate(1deg) translateX(3px) translateY(3px);
+					transition: all 1.8s ease;
+					color azul
+				span
+					display block
+					
+					
+			#info-personal
+				background transparent
+				display block
+				text-align center
+				article
+					display inline-block
+					margin: 0 1em
+					color #fff
+					h4
+						margin: 0
+						font-size 2em
+
+			#legal
+				display block
+				text-align center
+				p 
+					color #FFF
+					text-shadow 1px 2px 1px #333
+					margin: 0
+					padding 1em 0 1em 
